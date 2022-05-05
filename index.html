@@ -16,7 +16,7 @@
 		:root 
 			{
 			--typesize: 1rem;
-			--fraction: calc( 75vw / 12 )
+			--fraction: calc( 95vw / 12 )
 			}
 	
 
@@ -24,16 +24,8 @@
 		
 		@font-face 
 		    {
-		    font-family:'Elmyra Sans Ultra';
-		    src: url('typo/ElmyraSans-UltraBlack.woff') format('woff');
-		    font-weight:normal;
-		    font-style:normal;
-		    }
-
-		@font-face 
-		    {
-		    font-family:'Flow Sans Regular';
-		    src: url('typo/FlowSans-Regular.woff') format('woff');
+		    font-family:'Relief';
+		    src: url('typo/ReliefSingleLineOutline-Regular.woff2') format('woff2');
 		    font-weight:normal;
 		    font-style:normal;
 		    }
@@ -64,7 +56,7 @@
 		
 		#all 
 			{
-			width: 75vw;
+			width: 95vw;
 			max-width: 1200px;
 			margin:0 auto;
 			padding: 4rem 0 16.5rem;
@@ -75,7 +67,7 @@
 		
 		#header 
 			{
-			width: 75vw;
+			width: 95vw;
 			max-width: 1200px;
 			margin:1rem auto 0;
 			display: grid;
@@ -105,6 +97,7 @@
 			{
 			max-width:100%;
 			height:auto;
+			margin-bottom:2vw;
 			}
 
 /* Grid 12 columns (= 1fr, 8.333%) each column, gutter (1rem) */
@@ -194,7 +187,7 @@
 		
 		h1 
 			{
-			font-family:'Elmyra Sans Ultra',sans-serif;
+			font-family:'Relief',sans-serif;
 			font-size:calc( var(--typesize) * 4);
 			line-height:1.25;
 			color:inherit;
@@ -214,7 +207,7 @@
 		
 		h2 
 			{
-			font-family:'Elmyra Sans Ultra',sans-serif;
+			font-family:'Relief',sans-serif;
 			font-size:calc( var(--typesize) * 4);
 			line-height:1.25;
 			color:inherit;
@@ -234,7 +227,7 @@
 		
 		h3
 			{
-			font-family:'Flow Sans Regular',sans-serif;
+			font-family:'Relief',sans-serif;
 			font-size:calc(var(--typesize)*0.875);
 			line-height:1.4;
 			}
@@ -253,7 +246,7 @@
 
 		h4 
 			{
-			font-family:'Flow Sans Regular',sans-serif;
+			font-family:'Relief',sans-serif;
 			font-size:calc(var(--typesize)*0.875);
 			line-height:1.4;
 			text-indent:var(--fraction)
@@ -279,7 +272,7 @@
 		
 		p 
 			{
-			font-family:'Flow Sans Regular',sans-serif;
+			font-family:'Relief',sans-serif;
 			font-size:calc(var(--typesize)*1.6875);
 			line-height:1.4;
 			}
@@ -303,7 +296,7 @@
 		
 		a.afigure 
 			{
-			font-family:'Flow Sans Regular',sans-serif;
+			font-family:'Relief',sans-serif;
 			color:rgb(180,180,180);
 			text-decoration:none;
 			border-bottom:none;
@@ -311,7 +304,7 @@
 		
 		a:hover.afigure 
 			{
-			font-family:'Flow Sans Regular',sans-serif;
+			font-family:'Relief',sans-serif;
 			color:rgb(180,180,180);
 			text-decoration:none;
 			border-bottom:none;
@@ -327,7 +320,7 @@
 		
 		span.bfigure 
 			{
-			font-family:'Flow Sans Regular',sans-serif;
+			font-family:'Relief',sans-serif;
 			display:inline;
 			color:black;
 			text-align:left;
@@ -337,7 +330,7 @@
 		
 		p.small 
 			{
-			font-family:'Flow Sans Regular',sans-serif;
+			font-family:'Relief',sans-serif;
 			font-size:calc(var(--typesize)*0.875);
 			line-height:1.4;
 			}
@@ -351,19 +344,19 @@
 			{
 			color:black;
 			text-decoration:none;
-			border-bottom:2px solid rgb(180,180,180)
+			border-bottom:1px solid rgb(180,180,180)
 			}
 		
 		p.small a:hover 
 			{
 			color:black;
 			text-decoration:none;
-			border-bottom:2px solid black;
+			border-bottom:1px solid black;
 			}
 
 		figcaption 
 			{
-			font-family:'Flow Sans Regular',sans-serif;
+			font-family:'Relief',sans-serif;
 			font-size:calc(var(--typesize)*0.875);
 			line-height:1.4;
 			}
@@ -377,13 +370,13 @@
 			:root 
 				{
 				--typesize: 1rem;
-				--fraction: calc( 90vw / 12 )
+				--fraction: calc( 95vw / 12 )
 				}
 
 			#all 
 				{
-				width: 90vw;
-				max-width: 90vw;
+				width: 95vw;
+				max-width: 95vw;
 				padding: 1rem 0;
 				grid-gap: 0.5rem;
 				}
@@ -429,31 +422,11 @@
 	
 <body>
 <div id="top"></div>
-
-<!-- Header -->	
-	
-	<div id="header">
-
-	<div class="grid_2-8">	
-		<h1><a href="#infos" class="goinfos" title="Infos">TypoMorpho</a></h1>
-	</div>
-			
-
-	<div class=" grid_4">
-		<h2>&nbsp;</h2>
-	</div> 
-	
-	</div> 
-
 	 
 <!-- Start -->
 	
 <div id="all">
 
-<div class=" grid_12 start">
-	</div>
-
-	
 <!-- Icono -->
 	
 	<div class="grid_12">
@@ -512,54 +485,17 @@
 				<div class="grid_12">
 				
 	               	<p>&nbsp;</p>
+	               	<p>TypoMorpho</p>
 	               	<p>contact&#8239;[at]&#8239;typomorpho.fr</p>
-	               	<p><a href="https://www.instagram.com/typomorpho_design/" target="_blank">@&#8239;typomorpho_design</a><br/>&nbsp;</p>
+	               	<p><a href="https://www.instagram.com/typomorpho_design/" target="_blank">Instagram</a><br/>&nbsp;</p>
 
 					<hr />
 
-					<p>TypoMorpho is a graphic design studio based in Bordeaux comprising an architect, a graphic designer and an interaction designer, developing a global methodology linking architecture, object and sign. Our approach focuses on typographic quality, from text layout in editorial design to the drawing of specific alphabets for architecture.</p>
-
-	                <p>At the crossroads of architectural typology and urban morphology, ‹typomorpho› initially defines an analytic principle describing the structuring of space, open to investigate any territory created by man. By extension, it is about documenting the relation urban territory, architecture and written sign, between historical palimpsest, metropolization and suburbanization: literally ‹typomorpho› as the survey of typographic forms. We propose analysis, expertise and consulting missions in the field of signage and public spaces.</p>
-
-	                <p>We have notably designed the visual identity of the Basque Country Architecture Institute in Donostia-San Sebastián, the signage system of the Théâtre Sénart&#8239;/&#8239;Scène Nationale for L’Atelier d’Architecture Chaix &amp; Morel et Associés, collaborated with Hessamfar &amp; Vérons for the design of the low cost terminal’s façade of Bordeaux airport.</p>
-
-				</div>
-				
-<div class="grid_12 start"></div>
-<div class="grid_12 start"></div>
-
-<!-- Biographies --> 
-			
-				
-				<div class="grid_4">
-
-				<h4>François Chastanet</h4>
-               	<hr />
-
-					<p class="small">Architect and typographer (Dplg, Dea histoire architecturale et urbaine, Atelier National de Recherche Typographique&#8239;/&#8239;<a href="http://anrt-nancy.fr/fr/presentation/">Anrt</a>), teaches graphic design and typography since 2002 in the Graphic Design Department of the École Supérieure des Beaux-Arts de Toulouse&#8239;/&#8239;<a href="http://www.isdat.eu/" target="_blank">isdaT</a>, and jointly from 2010 to 2012 in the Design Department of the École Supérieure d’Art et de Design de Saint Étienne&#8239;/&#8239;<a href="http://www.esadse.fr/">Esadse</a>.</p>
-				
-				</div>
-				
-
-				<div class="grid_4">
-
-				<h4>Benoît Ricaud</h4>
-               	<hr />
-
-					<p class="small">Web and interaction designer. After an initial training in the Arts Plastiques Department of the Université Bordeaux III, acquired technical skills in audiovisual medias and screen technology while integrating different animation studios as computer graphics designer and then as creative director assistant (Gaumont Alphanim 2002 – 2005).</p>
+					<p>Graphic design, identity, wayfinding, typedesign, web, design systems, book design, exhibition design, micro-architecture &#8212; We have notably designed the visual identity of the Basque Country Architecture Institute in Donostia-San Sebastián, the signage system of the Théâtre Sénart&#8239;/&#8239;Scène Nationale for L’Atelier d’Architecture Chaix & Morel et Associés, collaborated with Hessamfar & Vérons for the design of the low cost terminal’s façade of Bordeaux airport.</p>
 
 				</div>
 				
 
-				<div class="grid_4">
-
-				<h4>Perrine Saint Martin</h4>
-               	<hr />
-
-					<p class="small">Graphic and type designer (Master École Supérieure des Beaux-Arts de Toulouse, post-diploma EnsadLab&#8239;/&#8239;Type de l’École Supérieure des Arts Décoratifs de Paris&#8239;/&#8239;Ensad), teaches graphic and type design since 2011 in the École Supérieure d’Art des Pyrénées&#8239;/&#8239;Ésa site de Pau, after working as artistic director at Maquette &amp; Mise en Page in Paris from 2009 to 2012.</p>
-
-				</div>
-									
 			<div class="grid_8">
 					<h2>&nbsp;</h2>
 				</div>	
@@ -568,7 +504,6 @@
 					<p><a href="#top" class="gotop" title="Top">&#8593;</a></p>
 				</div>	
 
-		
 
 		</div> 
 		</body>
